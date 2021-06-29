@@ -56,6 +56,7 @@ cd Some-test-activities/
 ## How to access to the stack?
 After installation, the following resources should be available by **Forwarding ports** from VirtualBox Guest to Host instance:
 * Grafana http://%host-ip%:3000
+* Grafana Dashboard can be found here:: http://%host-ip%:3000/d/mkcs35znk/node-exporter-full-with-node-name?orgId=1
 * Prometheus http://%host-ip%:9090
 * Node Exporter http://%host-ip%:9100
 
