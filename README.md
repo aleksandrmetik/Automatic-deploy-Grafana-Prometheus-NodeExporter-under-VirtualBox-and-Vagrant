@@ -1,6 +1,6 @@
-# Automatic deploy Grafana Prometheus NodeExporter under VirtualBox/Vagrant
+# Automatic deployment of Grafana+Prometheus+NodeExporter under VirtualBox/Vagrant
 
-**IMPORTANT!!! DO NOT USE IN PRODUCTION environment!**
+**IMPORTANT!!! DO NOT USE IN PRODUCTION environment!!!**
 
 ## What is it?
 * This is a set of bash scripts to automatically install VirtualBox 6.1, Vagrant and create ubuntu/bionic guest with automatic deployment of Prometheus, Grafana and NodeExporter.
@@ -43,7 +43,7 @@ git clone https://github.com/aleksandrmetik/Some-test-activities
 cd Some-test-activities/
 ./install.sh
 ```
-# Centos
+# Centos (! untested !)
 ```bash
 sudo yum update -qq && sudo yum install git -yqq
 git clone https://github.com/aleksandrmetik/Some-test-activities
@@ -59,4 +59,3 @@ After installation, the following resources should be available by **Forwarding 
 Default Grafana credential: 
 * Login: admin
 * Password: admin
-
