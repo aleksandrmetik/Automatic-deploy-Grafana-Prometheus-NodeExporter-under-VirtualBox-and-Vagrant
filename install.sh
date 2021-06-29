@@ -202,10 +202,9 @@ configure_vagrant () {
 	vagrant box add ubuntu/bionic64
 	vagrant init ubuntu/bionic64
 	hostip="0.0.0.0"
-	grep -qxF '  config.vm.network "forwarded_port", guest: 3000, host: 3000, host_ip: "'$hostip'"' Vagrantfile || echo '  config.vm.network "forwarded_port", guest: 3000, host: 3000, host_ip: "'$hostip'"' >> Vagrantfile
-	grep -qxF '  config.vm.network "forwarded_port", guest: 9000, host: 9000, host_ip: "'$hostip'"' Vagrantfile || echo '  config.vm.network "forwarded_port", guest: 9000, host: 9000, host_ip: "'$hostip'"' >> Vagrantfile
+	grep -qxF '  config.vm.network "forwarded_port", guest: 3000, host: 3000, host_ip: "'$hostip'"' Vagrantfile || echo '  config.vm.network "forwarded_port", guest: 3000, host: 3000, host_ip: "'$hostip'"' >> Vagrantfile	
 	grep -qxF '  config.vm.network "forwarded_port", guest: 9090, host: 9090, host_ip: "'$hostip'"' Vagrantfile || echo '  config.vm.network "forwarded_port", guest: 9090, host: 9090, host_ip: "'$hostip'"' >> Vagrantfile
-	grep -qxF '  config.vm.network "forwarded_port", guest: 9090, host: 9090, host_ip: "'$hostip'"' Vagrantfile || echo '  config.vm.network "forwarded_port", guest: 9100, host: 9100, host_ip: "'$hostip'"' >> Vagrantfile
+	grep -qxF '  config.vm.network "forwarded_port", guest: 9100, host: 9100, host_ip: "'$hostip'"' Vagrantfile || echo '  config.vm.network "forwarded_port", guest: 9100, host: 9100, host_ip: "'$hostip'"' >> Vagrantfile
 	grep -qxF '  config.vm.provision "file", source: "grafanadashboard.json", destination: "$HOME/grafanadashboard.json"' Vagrantfile || echo '  config.vm.provision "file", source: "grafanadashboard.json", destination: "$HOME/grafanadashboard.json"' >> Vagrantfile
 	grep -qxF '  config.vm.provision "shell", path: "deploy.sh"' Vagrantfile || echo '  config.vm.provision "shell", path: "deploy.sh"' >> Vagrantfile
 	sed  -e "/end/d" -i Vagrantfile
