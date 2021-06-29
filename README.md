@@ -13,6 +13,9 @@
    Stuck, hang during bootload linux kernel under VB guest. Tried to change a lot of options of virtualization on both sides PVE and VB but unsucceful.
 
 ## How do deploy:
+```bash
+sudo apt-get update -qq && sudo apt-get install git -yqq
 git clone https://github.com/aleksandrmetik/Automatic-deploy-Grafana-Prometheus-NodeExporter-under-VirtualBox-and-Vagrant
-sudo su
+cd Automatic-deploy-Grafana-Prometheus-NodeExporter-under-VirtualBox-and-Vagrant/
 ./install.sh
+```
