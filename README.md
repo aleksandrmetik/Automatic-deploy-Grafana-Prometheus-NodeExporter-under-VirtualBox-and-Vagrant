@@ -15,7 +15,7 @@
 ## How do deploy:
 ```bash
 sudo apt-get update -qq && sudo apt-get install git -yqq
-git clone https://github.com/aleksandrmetik/Automatic-deploy-Grafana-Prometheus-NodeExporter-under-VirtualBox-and-Vagrant
-cd Automatic-deploy-Grafana-Prometheus-NodeExporter-under-VirtualBox-and-Vagrant/
+git clone https://github.com/aleksandrmetik/Some-test-activities
+cd Some-test-activities/
 ./install.sh
 ```
