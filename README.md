@@ -79,3 +79,7 @@ Inspiration, code snippets, etc.
 * Fragments of open-source code were used, in particular Grafana's Dashboard 
 * Vagrant
 * VirtualBox
+
+ToDo List:
+- [ ] Test on CentOS 6,7,8
+- [ ] OS X
