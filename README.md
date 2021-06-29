@@ -1,10 +1,18 @@
 # Automatic deploy Grafana Prometheus NodeExporter under VirtualBox/Vagrant
+
+**IMPORTANT!!! DO NOT USE IN PRODUCTION environment!**
+
 ## What is it?
 * This is a set of bash scripts to automatically install VirtualBox 6.1, Vagrant and create ubuntu/bionic guest with automatic deployment of Prometheus, Grafana and NodeExporter.
 * Grafana automatically gets through Provisioning dashboard "grafanadashboard.json"
 * How it looks in the end you can see in the PDF file "example of grafana dashboard.pdf"
 * Script was written for Ubuntu, Debian, CentOs
-**IMPORTANT!!! DO NOT USE IN PRODUCTION environment!**
+* This script is not immutable, external dependencies can be changed by a third party (VirtualBox, Vagrant, Apt repositories and etc)
+
+## What is this script for?
+* This script is needed to demonstrate the capabilities of automated deployment using Bash.
+* Of course, the option through Docker is much more convenient and faster.
+( You may also find that using KVM/QEMU on servers without a GUI will be easier than VirtualBox.
 
 ## Information about tested OS and combinations of Hardware and Hypervisors 
  Tested OS:
