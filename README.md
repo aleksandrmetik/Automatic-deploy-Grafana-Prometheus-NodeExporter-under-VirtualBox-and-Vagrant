@@ -20,6 +20,10 @@ cd Some-test-activities/
 ./install.sh
 ```
 After installation, the following resources should be available:
-  Grafana http://<host-ip>:3000
-  Prometheus http://<host-ip>:9090
-  Node Exporter http://<host-ip>:9100
+* Grafana http://<host-ip>:3000
+* Prometheus http://<host-ip>:9090
+* Node Exporter http://<host-ip>:9100
+
+Default Grafana credential: 
+* Login: admin
+* Password: admin
