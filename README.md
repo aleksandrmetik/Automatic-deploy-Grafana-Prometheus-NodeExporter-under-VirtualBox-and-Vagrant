@@ -1,10 +1,10 @@
-# Automatic-deploy-Grafana-Prometheus-NodeExporter-under-VirtualBox-and-Vagrant
+# Automatic deploy Grafana Prometheus NodeExporter under VirtualBox/Vagrant
  Tested OS:
  + Ubuntu 20.04
 
  Tested hardware and hypervisors:
  Works:
- + Intel Xeon E5-4650, Linux 5.4.78-2-pve, PVE Hypervisor <-> QEMU  VirtualBox (Nested Virt) 
+ + Intel Xeon E5-4650, Linux 5.4.78-2-pve, Proxmox Hypervisor <-> QEMU  VirtualBox (Nested Virt) 
 
  Doesn't work: 
  - AMD Ryzen 7 3700X (Hetzner dedicated), Linux 5.4.119-1-pve,  PVE Hypervisor <-> QEMU VirtualBox (Nested virtualization)
