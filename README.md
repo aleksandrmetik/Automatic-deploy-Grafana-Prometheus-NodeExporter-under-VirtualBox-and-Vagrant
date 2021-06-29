@@ -13,6 +13,14 @@
 * This script is needed to demonstrate the capabilities of automated deployment using Bash.
 * Of course, the option through Docker is much more convenient and faster.
 ( You may also find that using KVM/QEMU on servers without a GUI will be easier than VirtualBox.
+* How can this script be useful? When developers use Docker on their workstations, they may encounter a number of problems:
+** Docker gradually eats up all available space in host. VirtualBox will more strictly limit disk, RAM and CPU consumption within the given limits
+** Conflicts when they need to deploy multiple instances of the same project (port conflicts, same containers names and etc) or a lot of differences projects
+** Docker is less secure than kernel-based virtualization
+** You can deliver ready-to-use environment for your team's members by OVF format
+** VirtualBox is able to snapshot, it will be easier for you to revert to a previous state of a VM
+** Clearing out old projects is much easier, just delete the entire virtual machine. If you may need the VM in the future, export it before.
+So, You can make up 100500 reasons for this, but this is just an example.
 
 ## Information about tested OS and combinations of Hardware and Hypervisors 
  Tested OS:
