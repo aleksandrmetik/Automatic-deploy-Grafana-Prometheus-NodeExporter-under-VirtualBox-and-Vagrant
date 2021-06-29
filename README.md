@@ -2,6 +2,8 @@
 
 **IMPORTANT!!! DO NOT USE IN PRODUCTION environment!!!**
 
+# Description 
+
 ## What is it?
 * This is a set of bash scripts to automatically install VirtualBox 6.1, Vagrant and create ubuntu/bionic guest with automatic deployment of Prometheus, Grafana and NodeExporter.
 * Grafana automatically gets through Provisioning dashboard "grafanadashboard.json"
@@ -35,22 +37,23 @@ Tested hardware and hypervisors:
 * Doesn't work: 
   * AMD Ryzen 7 3700X (Hetzner dedicated), Linux 5.4.119-1-pve,  PVE Hypervisor <-> QEMU VirtualBox (Nested virtualization). Stuck, hang during bootload linux kernel under VB guest. Tried to change a lot of options of virtualization on both sides PVE and VB but unsuccessful..
 
-## How to install:
-# Ubuntu/Debian
+# Getting Started
+## Installing & Executing
+**Ubuntu/Debian**
 ```bash
 sudo apt-get update -qq && sudo apt-get install git -yqq
 git clone https://github.com/aleksandrmetik/Some-test-activities
 cd Some-test-activities/
 ./install.sh
 ```
-# Centos (! untested !)
+**Centos (! untested !)**
 ```bash
 sudo yum update -qq && sudo yum install git -yqq
 git clone https://github.com/aleksandrmetik/Some-test-activities
 cd Some-test-activities/
 ./install.sh
 ```
-
+## How to access to the stack?
 After installation, the following resources should be available by **Forwarding ports** from VirtualBox Guest to Host instance:
 * Grafana http://%host-ip%:3000
 * Prometheus http://%host-ip%:9090
@@ -59,3 +62,18 @@ After installation, the following resources should be available by **Forwarding 
 Default Grafana credential: 
 * Login: admin
 * Password: admin
+
+To access to VM via SSH use the "vagrant ssh" command
+To destroy of VM use the "vagrant destroy" command
+
+# Authors
++ Aleksandr Metik
+
+# License
+GNU General Public License v3
+
+# Acknowledgments
+Inspiration, code snippets, etc.
+* Fragments of open-source code were used, in particular Grafana's Dashboard 
+* Vagrant
+* VirtualBox
