@@ -23,6 +23,7 @@
   * VirtualBox is able to snapshot, it will be easier for you to revert to a previous state of a VM;
   * You can run Docker inside VirtualBox VM, but nested virtualization is needed here;
   * Clearing out old projects is much easier, just delete the entire virtual machine. If you may need the VM in the future, export it before.
+
 So, You can make up 100500 reasons for this, but this is just an example.
 
 ## Information about tested OS and combinations of Hardware and Hypervisors 
