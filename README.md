@@ -65,9 +65,9 @@ Default Grafana credential:
 * Login: admin
 * Password: admin
 
-To access to VM via SSH use the "vagrant ssh" command
-To destroy of VM use the "vagrant destroy" command
-To recreate of VM use the "vagrant destroy && vagrant up" command
+- To access to VM via SSH use the "vagrant ssh" command
+- To destroy of VM use the "vagrant destroy" command
+- To recreate of VM use the "vagrant destroy && vagrant up" command
 
 # Authors
 + Aleksandr Metik
